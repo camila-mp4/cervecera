@@ -1,0 +1,606 @@
+{
+  "candidatas": [
+    "frio_hoy",
+    "frio_lag1",
+    "frio_lag2",
+    "frio_lag7",
+    "frio_rm3",
+    "frio_rm7",
+    "frio_rm14",
+    "frio_rm28",
+    "frio_std7",
+    "frio_delta1",
+    "frio_ult6h",
+    "frio_ult12h",
+    "doy_sin",
+    "doy_cos",
+    "mes",
+    "servicios",
+    "planta",
+    "elaboracion",
+    "sala_maq",
+    "bodega",
+    "envasado",
+    "condensadores",
+    "hl_mosto",
+    "hl_bodega",
+    "hl_envasada",
+    "hl_filtrada",
+    "agua_planta",
+    "aire_producido",
+    "hl_mosto_rm7",
+    "ratio_frio_planta",
+    "ratio_frio_elab",
+    "eficiencia_frio",
+    "frio_x_cos",
+    "mosto_x_cos",
+    "planta_ult6h",
+    "planta_rm7",
+    "elaboracion_ult6h",
+    "elaboracion_rm7",
+    "bodega_ult6h",
+    "bodega_rm7",
+    "cocina",
+    "cocina_ult6h",
+    "cocina_rm7",
+    "envasado_ult6h",
+    "envasado_rm7",
+    "linea_2",
+    "linea_2_ult6h",
+    "linea_2_rm7",
+    "linea_3",
+    "linea_3_ult6h",
+    "linea_3_rm7",
+    "linea_4",
+    "linea_4_ult6h",
+    "linea_4_rm7",
+    "servicios_ult6h",
+    "servicios_rm7",
+    "sala_maq_ult6h",
+    "sala_maq_rm7",
+    "aire",
+    "aire_ult6h",
+    "aire_rm7",
+    "calderas",
+    "calderas_ult6h",
+    "calderas_rm7",
+    "efluentes",
+    "efluentes_ult6h",
+    "efluentes_rm7",
+    "pta_agua_eflu",
+    "pta_agua_eflu_ult6h",
+    "pta_agua_eflu_rm7",
+    "prod_agua",
+    "prod_agua_ult6h",
+    "prod_agua_rm7",
+    "resto_serv",
+    "resto_serv_ult6h",
+    "resto_serv_rm7",
+    "restos_planta",
+    "restos_planta_ult6h",
+    "restos_planta_rm7",
+    "kw_gral_planta",
+    "kw_gral_planta_ult6h",
+    "kw_gral_planta_rm7",
+    "frio_min7",
+    "frio_max7"
+  ],
+  "descartadas_por_eda": [
+    "dia_semana",
+    "fin_de_semana"
+  ],
+  "seleccionadas": [
+    "frio_hoy",
+    "frio_rm14",
+    "frio_delta1",
+    "frio_ult6h",
+    "doy_cos",
+    "frio_x_cos",
+    "envasado_ult6h",
+    "sala_maq_ult6h",
+    "pta_agua_eflu_rm7",
+    "kw_gral_planta_ult6h",
+    "frio_max7"
+  ],
+  "votos": {
+    "frio_hoy": {
+      "lasso": 1,
+      "random_forest": 1,
+      "rfe_ridge": 0,
+      "votos": 2
+    },
+    "frio_lag1": {
+      "lasso": 0,
+      "random_forest": 0,
+      "rfe_ridge": 1,
+      "votos": 1
+    },
+    "frio_lag2": {
+      "lasso": 1,
+      "random_forest": 0,
+      "rfe_ridge": 0,
+      "votos": 1
+    },
+    "frio_lag7": {
+      "lasso": 0,
+      "random_forest": 0,
+      "rfe_ridge": 0,
+      "votos": 0
+    },
+    "frio_rm3": {
+      "lasso": 0,
+      "random_forest": 1,
+      "rfe_ridge": 0,
+      "votos": 1
+    },
+    "frio_rm7": {
+      "lasso": 0,
+      "random_forest": 1,
+      "rfe_ridge": 0,
+      "votos": 1
+    },
+    "frio_rm14": {
+      "lasso": 1,
+      "random_forest": 1,
+      "rfe_ridge": 1,
+      "votos": 3
+    },
+    "frio_rm28": {
+      "lasso": 0,
+      "random_forest": 0,
+      "rfe_ridge": 1,
+      "votos": 1
+    },
+    "frio_std7": {
+      "lasso": 0,
+      "random_forest": 0,
+      "rfe_ridge": 0,
+      "votos": 0
+    },
+    "frio_delta1": {
+      "lasso": 1,
+      "random_forest": 0,
+      "rfe_ridge": 1,
+      "votos": 2
+    },
+    "frio_ult6h": {
+      "lasso": 1,
+      "random_forest": 1,
+      "rfe_ridge": 1,
+      "votos": 3
+    },
+    "frio_ult12h": {
+      "lasso": 0,
+      "random_forest": 1,
+      "rfe_ridge": 0,
+      "votos": 1
+    },
+    "doy_sin": {
+      "lasso": 1,
+      "random_forest": 0,
+      "rfe_ridge": 0,
+      "votos": 1
+    },
+    "doy_cos": {
+      "lasso": 1,
+      "random_forest": 1,
+      "rfe_ridge": 1,
+      "votos": 3
+    },
+    "mes": {
+      "lasso": 1,
+      "random_forest": 0,
+      "rfe_ridge": 0,
+      "votos": 1
+    },
+    "servicios": {
+      "lasso": 0,
+      "random_forest": 1,
+      "rfe_ridge": 0,
+      "votos": 1
+    },
+    "planta": {
+      "lasso": 0,
+      "random_forest": 0,
+      "rfe_ridge": 1,
+      "votos": 1
+    },
+    "elaboracion": {
+      "lasso": 0,
+      "random_forest": 0,
+      "rfe_ridge": 0,
+      "votos": 0
+    },
+    "sala_maq": {
+      "lasso": 0,
+      "random_forest": 1,
+      "rfe_ridge": 0,
+      "votos": 1
+    },
+    "bodega": {
+      "lasso": 1,
+      "random_forest": 0,
+      "rfe_ridge": 0,
+      "votos": 1
+    },
+    "envasado": {
+      "lasso": 0,
+      "random_forest": 0,
+      "rfe_ridge": 0,
+      "votos": 0
+    },
+    "condensadores": {
+      "lasso": 1,
+      "random_forest": 0,
+      "rfe_ridge": 0,
+      "votos": 1
+    },
+    "hl_mosto": {
+      "lasso": 0,
+      "random_forest": 0,
+      "rfe_ridge": 0,
+      "votos": 0
+    },
+    "hl_bodega": {
+      "lasso": 0,
+      "random_forest": 0,
+      "rfe_ridge": 0,
+      "votos": 0
+    },
+    "hl_envasada": {
+      "lasso": 0,
+      "random_forest": 0,
+      "rfe_ridge": 0,
+      "votos": 0
+    },
+    "hl_filtrada": {
+      "lasso": 1,
+      "random_forest": 0,
+      "rfe_ridge": 0,
+      "votos": 1
+    },
+    "agua_planta": {
+      "lasso": 0,
+      "random_forest": 0,
+      "rfe_ridge": 0,
+      "votos": 0
+    },
+    "aire_producido": {
+      "lasso": 0,
+      "random_forest": 0,
+      "rfe_ridge": 0,
+      "votos": 0
+    },
+    "hl_mosto_rm7": {
+      "lasso": 1,
+      "random_forest": 0,
+      "rfe_ridge": 0,
+      "votos": 1
+    },
+    "ratio_frio_planta": {
+      "lasso": 1,
+      "random_forest": 0,
+      "rfe_ridge": 0,
+      "votos": 1
+    },
+    "ratio_frio_elab": {
+      "lasso": 1,
+      "random_forest": 0,
+      "rfe_ridge": 0,
+      "votos": 1
+    },
+    "frio_x_cos": {
+      "lasso": 0,
+      "random_forest": 1,
+      "rfe_ridge": 1,
+      "votos": 2
+    },
+    "mosto_x_cos": {
+      "lasso": 0,
+      "random_forest": 1,
+      "rfe_ridge": 0,
+      "votos": 1
+    },
+    "planta_ult6h": {
+      "lasso": 0,
+      "random_forest": 0,
+      "rfe_ridge": 1,
+      "votos": 1
+    },
+    "planta_rm7": {
+      "lasso": 0,
+      "random_forest": 0,
+      "rfe_ridge": 0,
+      "votos": 0
+    },
+    "elaboracion_ult6h": {
+      "lasso": 0,
+      "random_forest": 0,
+      "rfe_ridge": 0,
+      "votos": 0
+    },
+    "elaboracion_rm7": {
+      "lasso": 0,
+      "random_forest": 0,
+      "rfe_ridge": 0,
+      "votos": 0
+    },
+    "bodega_ult6h": {
+      "lasso": 0,
+      "random_forest": 0,
+      "rfe_ridge": 0,
+      "votos": 0
+    },
+    "bodega_rm7": {
+      "lasso": 1,
+      "random_forest": 0,
+      "rfe_ridge": 0,
+      "votos": 1
+    },
+    "cocina": {
+      "lasso": 0,
+      "random_forest": 0,
+      "rfe_ridge": 0,
+      "votos": 0
+    },
+    "cocina_ult6h": {
+      "lasso": 1,
+      "random_forest": 0,
+      "rfe_ridge": 0,
+      "votos": 1
+    },
+    "cocina_rm7": {
+      "lasso": 0,
+      "random_forest": 0,
+      "rfe_ridge": 0,
+      "votos": 0
+    },
+    "envasado_ult6h": {
+      "lasso": 1,
+      "random_forest": 0,
+      "rfe_ridge": 1,
+      "votos": 2
+    },
+    "envasado_rm7": {
+      "lasso": 1,
+      "random_forest": 0,
+      "rfe_ridge": 0,
+      "votos": 1
+    },
+    "linea_2": {
+      "lasso": 1,
+      "random_forest": 0,
+      "rfe_ridge": 0,
+      "votos": 1
+    },
+    "linea_2_ult6h": {
+      "lasso": 0,
+      "random_forest": 0,
+      "rfe_ridge": 0,
+      "votos": 0
+    },
+    "linea_2_rm7": {
+      "lasso": 0,
+      "random_forest": 0,
+      "rfe_ridge": 0,
+      "votos": 0
+    },
+    "linea_3": {
+      "lasso": 0,
+      "random_forest": 0,
+      "rfe_ridge": 1,
+      "votos": 1
+    },
+    "linea_3_ult6h": {
+      "lasso": 0,
+      "random_forest": 1,
+      "rfe_ridge": 0,
+      "votos": 1
+    },
+    "linea_3_rm7": {
+      "lasso": 0,
+      "random_forest": 0,
+      "rfe_ridge": 0,
+      "votos": 0
+    },
+    "linea_4": {
+      "lasso": 0,
+      "random_forest": 0,
+      "rfe_ridge": 0,
+      "votos": 0
+    },
+    "linea_4_ult6h": {
+      "lasso": 0,
+      "random_forest": 0,
+      "rfe_ridge": 0,
+      "votos": 0
+    },
+    "linea_4_rm7": {
+      "lasso": 1,
+      "random_forest": 0,
+      "rfe_ridge": 0,
+      "votos": 1
+    },
+    "servicios_ult6h": {
+      "lasso": 0,
+      "random_forest": 1,
+      "rfe_ridge": 0,
+      "votos": 1
+    },
+    "servicios_rm7": {
+      "lasso": 1,
+      "random_forest": 0,
+      "rfe_ridge": 0,
+      "votos": 1
+    },
+    "sala_maq_ult6h": {
+      "lasso": 1,
+      "random_forest": 1,
+      "rfe_ridge": 0,
+      "votos": 2
+    },
+    "sala_maq_rm7": {
+      "lasso": 0,
+      "random_forest": 0,
+      "rfe_ridge": 0,
+      "votos": 0
+    },
+    "aire": {
+      "lasso": 0,
+      "random_forest": 0,
+      "rfe_ridge": 0,
+      "votos": 0
+    },
+    "aire_ult6h": {
+      "lasso": 1,
+      "random_forest": 0,
+      "rfe_ridge": 0,
+      "votos": 1
+    },
+    "aire_rm7": {
+      "lasso": 0,
+      "random_forest": 0,
+      "rfe_ridge": 0,
+      "votos": 0
+    },
+    "calderas": {
+      "lasso": 0,
+      "random_forest": 0,
+      "rfe_ridge": 0,
+      "votos": 0
+    },
+    "calderas_ult6h": {
+      "lasso": 0,
+      "random_forest": 0,
+      "rfe_ridge": 0,
+      "votos": 0
+    },
+    "calderas_rm7": {
+      "lasso": 1,
+      "random_forest": 0,
+      "rfe_ridge": 0,
+      "votos": 1
+    },
+    "efluentes": {
+      "lasso": 0,
+      "random_forest": 0,
+      "rfe_ridge": 0,
+      "votos": 0
+    },
+    "efluentes_ult6h": {
+      "lasso": 1,
+      "random_forest": 0,
+      "rfe_ridge": 0,
+      "votos": 1
+    },
+    "efluentes_rm7": {
+      "lasso": 0,
+      "random_forest": 0,
+      "rfe_ridge": 0,
+      "votos": 0
+    },
+    "pta_agua_eflu": {
+      "lasso": 0,
+      "random_forest": 0,
+      "rfe_ridge": 0,
+      "votos": 0
+    },
+    "pta_agua_eflu_ult6h": {
+      "lasso": 0,
+      "random_forest": 0,
+      "rfe_ridge": 0,
+      "votos": 0
+    },
+    "pta_agua_eflu_rm7": {
+      "lasso": 1,
+      "random_forest": 0,
+      "rfe_ridge": 1,
+      "votos": 2
+    },
+    "prod_agua": {
+      "lasso": 0,
+      "random_forest": 0,
+      "rfe_ridge": 0,
+      "votos": 0
+    },
+    "prod_agua_ult6h": {
+      "lasso": 0,
+      "random_forest": 0,
+      "rfe_ridge": 0,
+      "votos": 0
+    },
+    "prod_agua_rm7": {
+      "lasso": 0,
+      "random_forest": 0,
+      "rfe_ridge": 1,
+      "votos": 1
+    },
+    "resto_serv": {
+      "lasso": 1,
+      "random_forest": 0,
+      "rfe_ridge": 0,
+      "votos": 1
+    },
+    "resto_serv_ult6h": {
+      "lasso": 1,
+      "random_forest": 0,
+      "rfe_ridge": 0,
+      "votos": 1
+    },
+    "resto_serv_rm7": {
+      "lasso": 0,
+      "random_forest": 0,
+      "rfe_ridge": 0,
+      "votos": 0
+    },
+    "restos_planta": {
+      "lasso": 0,
+      "random_forest": 0,
+      "rfe_ridge": 0,
+      "votos": 0
+    },
+    "restos_planta_ult6h": {
+      "lasso": 0,
+      "random_forest": 0,
+      "rfe_ridge": 0,
+      "votos": 0
+    },
+    "restos_planta_rm7": {
+      "lasso": 1,
+      "random_forest": 0,
+      "rfe_ridge": 0,
+      "votos": 1
+    },
+    "kw_gral_planta": {
+      "lasso": 0,
+      "random_forest": 0,
+      "rfe_ridge": 1,
+      "votos": 1
+    },
+    "kw_gral_planta_ult6h": {
+      "lasso": 1,
+      "random_forest": 0,
+      "rfe_ridge": 1,
+      "votos": 2
+    },
+    "kw_gral_planta_rm7": {
+      "lasso": 0,
+      "random_forest": 0,
+      "rfe_ridge": 0,
+      "votos": 0
+    },
+    "frio_min7": {
+      "lasso": 1,
+      "random_forest": 0,
+      "rfe_ridge": 0,
+      "votos": 1
+    },
+    "frio_max7": {
+      "lasso": 1,
+      "random_forest": 1,
+      "rfe_ridge": 0,
+      "votos": 2
+    }
+  },
+  "lasso_alpha": 82.70358397291297
+}

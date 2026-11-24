@@ -1,0 +1,96 @@
+{
+  "generado": "2026-11-24T02:02:10+00:00",
+  "script": "src/preprocessing_pipeline.py",
+  "entradas": [
+    "Totalizadores_Planta_-_2021_2023.xlsx",
+    "Totalizadores_Planta_2020_2022.xlsx",
+    "Totalizadores_Planta_2022_2023.xlsx"
+  ],
+  "pasos": [
+    "lectura por nombre de hojas/columnas; HORA truncada al minuto",
+    "jornadas apiladas: fechas invalidas (la regla de reasignacion no paso la validacion)",
+    "total diario = lectura de las 23:59; si falta, 23:00 + ritmo de las ultimas 3 h x 59 min",
+    "Frio: total = suma de incrementos horarios; saltos (<0 o >3000 kW, incluidos los del millon) reemplazados por la mediana del dia; arrastre sin reinicio descontado",
+    "otras columnas: valores >= 1e6 -> NaN",
+    "dias invalidos: <24 lecturas, arranque despues de 00:00, apilados no reasignados, >2 saltos",
+    "consumo de las ultimas 6 h (18:00 -> cierre) para todas las columnas de Consolidado EE",
+    "unificacion: dia valido > archivo con fecha final mas reciente",
+    "reindexado a calendario completo",
+    "features: lags, medias moviles, sin/cos dia del anio, areas, ratios, eficiencia, interacciones",
+    "target y = Frio.shift(-1) sobre calendario completo",
+    "filas sin target o sin nivel de Frio reciente eliminadas",
+    "split temporal 70/15/15",
+    "filtro sin target (<=5% NaN, >10 valores distintos) + seleccion LASSO/RF/RFE solo con train, >=2 votos",
+    "dataset_final.csv NO escalado (el escalado vive en el Pipeline del modelo)"
+  ],
+  "solapamiento": {
+    "fechas_en_mas_de_un_archivo": 498,
+    "fechas_comparables": 493,
+    "fechas_con_total_identico": 488,
+    "fechas_con_total_distinto": 5,
+    "detalle_distintas": {
+      "2021-07-28": {
+        "Totalizadores_Planta_-_2021_2023.xlsx": 30764.0,
+        "Totalizadores_Planta_2020_2022.xlsx": 2900770.0,
+        "Totalizadores_Planta_2022_2023.xlsx": null
+      },
+      "2021-08-25": {
+        "Totalizadores_Planta_-_2021_2023.xlsx": 37122.0,
+        "Totalizadores_Planta_2020_2022.xlsx": 2907122.0,
+        "Totalizadores_Planta_2022_2023.xlsx": null
+      },
+      "2021-11-28": {
+        "Totalizadores_Planta_-_2021_2023.xlsx": 25719.0,
+        "Totalizadores_Planta_2020_2022.xlsx": 6155928.0,
+        "Totalizadores_Planta_2022_2023.xlsx": null
+      },
+      "2022-02-02": {
+        "Totalizadores_Planta_-_2021_2023.xlsx": 19887.0,
+        "Totalizadores_Planta_2020_2022.xlsx": 52655.0,
+        "Totalizadores_Planta_2022_2023.xlsx": null
+      },
+      "2022-02-18": {
+        "Totalizadores_Planta_-_2021_2023.xlsx": 21470.0,
+        "Totalizadores_Planta_2020_2022.xlsx": 8861470.0,
+        "Totalizadores_Planta_2022_2023.xlsx": null
+      }
+    },
+    "regla_desempate": "dia valido > archivo con fecha final mas reciente"
+  },
+  "dias_calendario": 1213,
+  "dias_validos": 1165,
+  "filas_dataset_final": 1164,
+  "shapes": {
+    "train": [
+      815,
+      11
+    ],
+    "val": [
+      174,
+      11
+    ],
+    "test": [
+      175,
+      11
+    ]
+  },
+  "rangos": {
+    "train": [
+      "2020-07-01",
+      "2022-10-25"
+    ],
+    "val": [
+      "2022-10-26",
+      "2023-04-25"
+    ],
+    "test": [
+      "2023-04-26",
+      "2023-10-24"
+    ]
+  },
+  "salidas": [
+    "data/interim/dataset_unificado.csv",
+    "data/processed/dataset_final.csv",
+    "data/processed/selected_features.json"
+  ]
+}
