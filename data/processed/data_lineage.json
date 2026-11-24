@@ -1,10 +1,10 @@
 {
-  "generado": "2026-11-24T02:02:10+00:00",
+  "generado": "2026-11-24T04:05:17+00:00",
   "script": "src/preprocessing_pipeline.py",
   "entradas": [
-    "Totalizadores_Planta_-_2021_2023.xlsx",
-    "Totalizadores_Planta_2020_2022.xlsx",
-    "Totalizadores_Planta_2022_2023.xlsx"
+    "Totalizadores Planta - 2021_2023.xlsx",
+    "Totalizadores Planta 2020_2022.xlsx",
+    "Totalizadores Planta 2022_2023.xlsx"
   ],
   "pasos": [
     "lectura por nombre de hojas/columnas; HORA truncada al minuto",
@@ -30,29 +30,29 @@
     "fechas_con_total_distinto": 5,
     "detalle_distintas": {
       "2021-07-28": {
-        "Totalizadores_Planta_-_2021_2023.xlsx": 30764.0,
-        "Totalizadores_Planta_2020_2022.xlsx": 2900770.0,
-        "Totalizadores_Planta_2022_2023.xlsx": null
+        "Totalizadores Planta - 2021_2023.xlsx": 30764.0,
+        "Totalizadores Planta 2020_2022.xlsx": 2900770.0,
+        "Totalizadores Planta 2022_2023.xlsx": null
       },
       "2021-08-25": {
-        "Totalizadores_Planta_-_2021_2023.xlsx": 37122.0,
-        "Totalizadores_Planta_2020_2022.xlsx": 2907122.0,
-        "Totalizadores_Planta_2022_2023.xlsx": null
+        "Totalizadores Planta - 2021_2023.xlsx": 37122.0,
+        "Totalizadores Planta 2020_2022.xlsx": 2907122.0,
+        "Totalizadores Planta 2022_2023.xlsx": null
       },
       "2021-11-28": {
-        "Totalizadores_Planta_-_2021_2023.xlsx": 25719.0,
-        "Totalizadores_Planta_2020_2022.xlsx": 6155928.0,
-        "Totalizadores_Planta_2022_2023.xlsx": null
+        "Totalizadores Planta - 2021_2023.xlsx": 25719.0,
+        "Totalizadores Planta 2020_2022.xlsx": 6155928.0,
+        "Totalizadores Planta 2022_2023.xlsx": null
       },
       "2022-02-02": {
-        "Totalizadores_Planta_-_2021_2023.xlsx": 19887.0,
-        "Totalizadores_Planta_2020_2022.xlsx": 52655.0,
-        "Totalizadores_Planta_2022_2023.xlsx": null
+        "Totalizadores Planta - 2021_2023.xlsx": 19887.0,
+        "Totalizadores Planta 2020_2022.xlsx": 52655.0,
+        "Totalizadores Planta 2022_2023.xlsx": null
       },
       "2022-02-18": {
-        "Totalizadores_Planta_-_2021_2023.xlsx": 21470.0,
-        "Totalizadores_Planta_2020_2022.xlsx": 8861470.0,
-        "Totalizadores_Planta_2022_2023.xlsx": null
+        "Totalizadores Planta - 2021_2023.xlsx": 21470.0,
+        "Totalizadores Planta 2020_2022.xlsx": 8861470.0,
+        "Totalizadores Planta 2022_2023.xlsx": null
       }
     },
     "regla_desempate": "dia valido > archivo con fecha final mas reciente"

@@ -59,9 +59,9 @@ Los Excel **no están en el repositorio** (pesan ~30 MB cada uno y están en `.g
 de la materia y se copian dentro de `data/` **sin renombrarlos**:
 
 ```
-data/Totalizadores_Planta_2020_2022.xlsx
-data/Totalizadores_Planta_-_2021_2023.xlsx
-data/Totalizadores_Planta_2022_2023.xlsx
+data/Totalizadores Planta 2020_2022.xlsx
+data/Totalizadores Planta - 2021_2023.xlsx
+data/Totalizadores Planta 2022_2023.xlsx
 ```
 
 El código busca `data/Totalizadores*Planta*.xlsx`, así que también funciona con los nombres
