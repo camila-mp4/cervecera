@@ -67,8 +67,8 @@
     "path": "models/modelo_v1.0.0.pkl",
     "sha256_modelo": "78670d494a53ad55c53a9b04aa5b6d9e83e40995bf36aaa18dbd8c784596c71c",
     "sha256_dataset": "a0cc57ac0ba7c89f2279b75dd9641958eb5a99232375cf1dddf37732301a22b3",
-    "git_commit": "4a3f80c54c08aa5909f6a53ed0815ec351dc299e",
-    "creado": "2026-11-24T04:15:52+00:00",
+    "git_commit": "f0dd19488da5df7a9322f3b95fa7610d28edbfbe",
+    "creado": "2026-11-24T04:20:37+00:00",
     "semilla": 42
   }
 }
