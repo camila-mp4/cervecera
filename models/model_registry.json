@@ -1,0 +1,74 @@
+{
+  "1.0.0": {
+    "version": "1.0.0",
+    "modelo": "Lasso",
+    "objetivo": "nivel",
+    "hiperparametros": {
+      "alpha": 300,
+      "max_iter": 50000
+    },
+    "features": [
+      "frio_hoy",
+      "frio_rm14",
+      "frio_delta1",
+      "frio_ult6h",
+      "doy_cos",
+      "frio_x_cos",
+      "envasado_ult6h",
+      "sala_maq_ult6h",
+      "pta_agua_eflu_rm7",
+      "kw_gral_planta_ult6h",
+      "frio_max7"
+    ],
+    "columnas_requeridas": {
+      "Consolidado EE": [
+        "Frio (Kw)",
+        "Envasado (Kw)",
+        "Sala Maq (Kw)",
+        "Pta Agua / Eflu (Kw)",
+        "KW Gral Planta"
+      ]
+    },
+    "metricas_validacion": {
+      "MAE": 2103.2756510491467,
+      "RMSE": 2808.9602855749026,
+      "R2": 0.5128040333537169
+    },
+    "cv_train_mae_folds": [
+      5501.800012957127,
+      3146.0923687888176,
+      3144.6128675700397,
+      2662.77785023269,
+      3108.304992983306
+    ],
+    "metricas_test": {
+      "modelo_final": {
+        "MAE": 2724.0598797839725,
+        "RMSE": 3571.9594504344536,
+        "R2": 0.6041259239801349
+      },
+      "persistencia": {
+        "MAE": 3356.8685714285716,
+        "RMSE": 4322.725295128394,
+        "R2": 0.4202252497509277
+      },
+      "media_movil_7d": {
+        "MAE": 3047.7519183828567,
+        "RMSE": 3975.91999984887,
+        "R2": 0.5095222653917972
+      }
+    },
+    "mejora_vs_mejor_baseline_test": 0.10620681973703283,
+    "entrenado_con": "train+val",
+    "rango_entrenamiento": [
+      "2020-07-01",
+      "2023-04-25"
+    ],
+    "path": "models/modelo_v1.0.0.pkl",
+    "sha256_modelo": "78670d494a53ad55c53a9b04aa5b6d9e83e40995bf36aaa18dbd8c784596c71c",
+    "sha256_dataset": "a0cc57ac0ba7c89f2279b75dd9641958eb5a99232375cf1dddf37732301a22b3",
+    "git_commit": "4a3f80c54c08aa5909f6a53ed0815ec351dc299e",
+    "creado": "2026-11-24T04:15:52+00:00",
+    "semilla": 42
+  }
+}
