@@ -1,0 +1,17 @@
+# Datos crudos: NO se versionan (ver README, sección Datos). Se verifican con data/checksums.json
+data/*.xlsx
+data/interim/
+~$*.xlsx
+
+# Python / Jupyter
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+cervecera_env/
+
+# Sistema / editores
+.DS_Store
+.vscode/
+.idea/
